@@ -2,24 +2,33 @@ group 'psstd'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
-apply plugin: 'war'
 apply plugin: 'idea'
 apply plugin: 'application'
+mainClassName = 'ru.psstd.Application'
 apply plugin: 'org.springframework.boot'
+apply plugin: 'war'
+
+springBoot {
+    mainClass 'ru.psstd.Application'
+}
 
 buildscript {
     repositories {
         mavenCentral()
     }
     dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.2.RELEASE")
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.7.RELEASE")
     }
 }
 
 war {
-    baseName = 'demo'
+    baseName = 'psstd'
     version = '0.1.0'
-    archiveName = 'demo.war'
+    archiveName = 'psstd.war'
+}
+
+configurations {
+    providedRuntime
 }
 
 sourceCompatibility = 1.8
