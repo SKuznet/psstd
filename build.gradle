@@ -24,7 +24,7 @@ buildscript {
 war {
     baseName = 'psstd'
     version = '0.1.0'
-    archiveName = 'psstd.war'
+    archiveName = 'ROOT.war'
 }
 
 configurations {
