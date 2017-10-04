@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:fragment="header">
+<head>
+    <link href="../static/css/bootstrap.min.css"
+          th:href="@{/css/bootstrap.min.css}" rel="stylesheet" media="screen"/>
+</head>
+<body>
+<div th:fragment="header">
+    <header>
+        <a href="" class="logo">Лого</a>
+        <nav>
+            <ul class="topmenu">
+                <li><a href="">Главная</a></li>
+                <li><a href="" class="submenu-link">О нас</a>
+                    <ul class="submenu">
+                        <li><a href="">Производство</a></li>
+                        <li><a href="">Магазин</a></li>
+                        <li><a href="">Сервис</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Проекты</a></li>
+                <li><a href="">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+</div>
+</body>
+</html>
