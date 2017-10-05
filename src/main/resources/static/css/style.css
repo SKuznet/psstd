@@ -9,7 +9,22 @@ body {
 }
 
 header {
-    /*background-image: url("../images/background.jpg");*/
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    overflow: auto;
+    background-image: url("../images/background.jpg");
+    text-align: center;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    overflow: auto;
+    background-image: url("../images/background.jpg");
     text-align: center;
 }
 
@@ -21,7 +36,7 @@ header a {
 }
 
 .logo {
-    color: #D5B45B;
+    color: whitesmoke;
     font-family: 'Playfair Display', serif;
     font-size: 2.5em;
     padding: 20px 0;
@@ -49,12 +64,12 @@ nav ul {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: bold;
-    color: #404040;
+    color: #fff3cd;
     padding: 15px 30px;
 }
 
 .topmenu > li:hover > a, .submenu li:hover a {
-    color: greenyellow;
+    color: #ffffff;
 }
 
 .submenu-link:after {
