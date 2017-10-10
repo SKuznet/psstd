@@ -8,6 +8,12 @@ body {
     margin: 0;
 }
 
+.maint {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 header {
     position: absolute;
     height: 50px;
