@@ -16,7 +16,7 @@ public class MainController {
 
     @RequestMapping("/")
     public String getStatus(Model model) {
-        return "maintenance";
+        return "status";
     }
 
     @ResponseBody
