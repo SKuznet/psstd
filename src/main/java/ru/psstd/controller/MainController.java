@@ -16,13 +16,12 @@ public class MainController {
 
     @RequestMapping("/")
     public String getStatus(Model model) {
-        return "status";
+        return "about";
     }
 
-    @ResponseBody
     @RequestMapping(value = "/about", method = RequestMethod.GET)
-    public About getAboutInfo() {
-        return aboutService.getInfo();
+    public String getAboutInfo() {
+        return "about";
     }
 
     @RequestMapping("/aboutpage")

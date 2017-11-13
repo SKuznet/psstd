@@ -5,35 +5,39 @@
           th:href="@{/css/bootstrap.min.css}" rel="stylesheet" media="screen"/>
 </head>
 <body>
-<div th:fragment="header">
-    <header>
-        <div class="column-left">
-            <img src="../static/images/logo.jpg" th:src="@{/images/logo.jpg}"/>
-        </div>
-        <div class="column-center">
-            <h1>ПРОФ</h1>
-            <h1>CПЕЦ</h1>
-            <h1>CТАНДАРТ</h1>
-        </div>
-        <div class="column-right">
-            <p>Тел.: + 7 (812) 67 098 66</p>
-            <p>Email: info@psstd.ru</p>
-            <p>Пн-Пт 9:00 – 18:00</p>
-        </div>
-
-        <img class="logo" src="../static/images/pic.jpg" th:src="@{/images/pic.jpg}"/>
-
+<div th:fragment="copy">
+    <div class="column-left">
+        <img src="../static/images/logo.jpg" th:src="@{/images/logo.jpg}"/>
+    </div>
+    <div class="column-center">
+        <h3><span style="color: red; ">П</span>РОФ</h3>
+        <h3>CПЕЦ</h3>
+        <h3>CТАНДАРТ</h3>
+    </div>
+    <div class="column-right">
+        <p>
+            Тел.: + 7 (812) 67 098 66<br></br>Email: info@psstd.ru<br></br>Пн-Пт 9:00 – 18:00
+        </p>
+    </div>
+    <br></br>
+    <br></br>
+    <img class="logo" src="../static/images/pic.jpg" th:src="@{/images/pic.jpg}"/>
+    <br></br>
+    <div class="menu">
         <nav>
-            <ul class="topmenu">
-                <li><a href="">Главная</a></li>
-                <li><a href="">Профессиональная переподготовка</a></li>
-                <li><a href="">Повышение квалификации</a></li>
-                <li><a href="">Аттестация</a></li>
-                <li><a href="">Сертификация</a></li>
-                <li><a href="">Контакты</a></li>
+            <ul class="topmenu" style="list-style: none;
+                                        margin: 0;
+                                        padding-left: 0;">
+                <li style="float: left; margin-right: 5px;"><a href="http://psstd.ru/about">Главная</a></li>
+                <li style="float: left; margin-right: 5px;"><a href="">Профессиональная переподготовка</a></li>
+                <li style="float: left; margin-right: 5px;"><a href="">Повышение квалификации</a></li>
+                <li style="float: left; margin-right: 5px;"><a href="">Аттестация</a></li>
+                <li style="float: left; margin-right: 5px;"><a href="">Сертификация</a></li>
+                <li style="float: left; margin-right: 5px;"><a href="">Контакты</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
+    <br></br>
 </div>
 </body>
 </html>
